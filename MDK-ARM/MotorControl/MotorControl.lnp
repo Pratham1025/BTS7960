@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"motorcontrol\startup_stm32f103xb.o"
+"motorcontrol\main.o"
+"motorcontrol\stm32f1xx_it.o"
+"motorcontrol\stm32f1xx_hal_msp.o"
+"motorcontrol\stm32f1xx_hal_gpio_ex.o"
+"motorcontrol\stm32f1xx_hal_tim.o"
+"motorcontrol\stm32f1xx_hal_tim_ex.o"
+"motorcontrol\stm32f1xx_hal.o"
+"motorcontrol\stm32f1xx_hal_rcc.o"
+"motorcontrol\stm32f1xx_hal_rcc_ex.o"
+"motorcontrol\stm32f1xx_hal_gpio.o"
+"motorcontrol\stm32f1xx_hal_dma.o"
+"motorcontrol\stm32f1xx_hal_cortex.o"
+"motorcontrol\stm32f1xx_hal_pwr.o"
+"motorcontrol\stm32f1xx_hal_flash.o"
+"motorcontrol\stm32f1xx_hal_flash_ex.o"
+"motorcontrol\stm32f1xx_hal_exti.o"
+"motorcontrol\system_stm32f1xx.o"
+--strict --scatter "MotorControl\MotorControl.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MotorControl.map" -o MotorControl\MotorControl.axf
